@@ -6,6 +6,19 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+  <style>
+    .center {
+      text-align: center;
+    }
+
+    .shout--light {
+      background: #fff !important;
+    }
+
+    .shout--light h2 {
+      color: #000 !important;
+    }
+  </style>
 </head>
 <body class="list">
 	<header class="caption">
@@ -66,16 +79,12 @@
 	</div></section>
 	<section class="slide" id="gifalicious-made-of"><div>
 		<h2>gifalicious:</h2>
-		<ul>
-      <li><img src="pictures/hoodie-logo.png" /></li>
-      <li></li>
-			<li><img src="pictures/backbone-logo.png" /></li>
-		</ul>
-    <style>
-      #gifalicious-made-of li:before {
-        content: '';
-        }
-    </style>
+    <div class="center">
+      <img src="pictures/hoodie-logo.png" />
+      <br />
+      <br />
+      <img src="pictures/backbone-logo.png" />
+    </div>
 	</div></section>
   <section class="slide shout"><div>
     <h2>Make it work offline.</h2>
@@ -98,72 +107,142 @@
   <section class="slide shout"><div>
     <h2>Add app logo.</h2>
   </div></section>
-  <section class="slide"><div>
+  <section class="slide" id="IconSizes"><div>
     <h2>Recommended sizes:</h2>
     <ul>
-      <li>16px x 16px</li>
-      <li>30px x 30px</li>
-      <li>32px x 32px</li>
-      <li>48px x 48px</li>
-      <li>60px x 60px</li>
-      <li>64px x 64px</li>
-      <li>90px x 90px</li>
-      <li>120px x 120px</li>
-      <li>128px x 128px</li>
-      <li>256px x 256px</li>
+      <li>16px * 16px</li>
+      <li>30px * 30px</li>
+      <li>32px * 32px</li>
+      <li>48px * 48px</li>
+      <li>60px * 60px</li>
     </ul>
-  </div></section>
-  <section class="slide shout cover" id="surprise"><div>
-    <h2>More logo files!</h2>
-    <img src="pictures/surprise.gif" alt="">
+    <ul>
+      <li>64px * 64px</li>
+      <li>90px * 90px</li>
+      <li>120px * 120px</li>
+      <li>128px * 128px</li>
+      <li>256px * 256px</li>
+    </ul>
     <style>
-      #surprise h2 {
-        color:#FFF;
-        text-shadow: 0 0 6px rgba(0, 0, 0, .7);
-        }
+      #IconSizes ul {
+        width: 45%;
+        display: inline-block;
+      }
     </style>
   </div></section>
+  <section class="slide shout shout--light"><div>
+    <h2>More logo files!</h2>
+  </div></section>
+  <section class="slide cover"><div>
+    <img src="pictures/surprise.gif">
+  </div></section>
   <section class="slide"><div>
-    <h2>Automate. Use Grunt.</h2>
-    <img src="pictures/grunt-logo.png" />
+    <h2>Automate using Grunt.</h2>
+    <div class="center">
+      <img src="pictures/grunt-logo.png" />
+    </div>
   </div></section>
   <section class="slide shout"><div>
     <h2>Add manifest.webapp</h2>
   </div></section>
+  <section class="slide"><div>
+    <pre>
+      <code>{</code>
+      <code>  "name": "gifalicious",</code>
+      <code>  "description": "… the best animated gifs …",</code>
+      <code>  "version": "1.0.0",</code>
+      <code>  "developer": {</code>
+      <code>    "name": "Robert Katzki",</code>
+      <code>    "url": "http://katzki.de"</code>
+      <code>  },</code>
+      <code>  …</code>
+    </pre>
+  </div></section>
 	<section class="slide"><div>
 		<pre>
-			<code>{</code>
-			<code>  "name": "gifalicious",</code>
-			<code>  "description": "… the best animated gifs …"</code>
-			<code>  "launch_path": "index.html"</code>
-			<code>  "developer": {</code>
-      <code>    "name": "Robert Katzki",</code>
-			<code>    "url": "http://katzki.de"</code>
-      <code>  }  …</code>
+      <code>  …</code>
+      <code>  "icons": {</code>
+      <code>    "16": "/logos/firefox-icon-16x16.png",</code>
+      <code>    "30": "/logos/firefox-icon-30x30.png",</code>
+      <code>    …</code>
+      <code>  },</code>
+      <code>  "launch_path": "index.html",</code>
+      <code>  "appcache_path": "appcache.manifest",</code>
+      <code>  …</code>
+    </pre>
+  </div></section>
+  <section class="slide"><div>
+    <pre>
+      <code>  …</code>
+      <code>  "type": "hosted",</code>
+      <code>  "permissions": {</code>
+      <code>    "systemXHR": {</code>
+      <code>      "description": "Communicate with the server."</code>
+      <code>    }</code>
+      <code>  }</code>
+      <code>}</code>
 		</pre>
 	</div></section>
-	<section class="slide cover" id="Picture"><div>
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="">
-		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</div></section>
-	<section class="slide shout"><div>
-		<h2>You can even shout this way</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Inner Navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</div></section>
+  <section class="slide shout"><div>
+    <h2>Type?</h2>
+  </div></section>
+  <section class="slide shout shout--light"><div>
+    <h2><code>hosted</code></h2>
+    Regular web app, running from own server. The default.
+  </div></section>
+  <section class="slide shout shout--light"><div>
+    <h2><code>privileged</code></h2>
+    Packaged app with advanced WebAPI access, approved by app store.
+  </div></section>
+  <section class="slide shout shout--light"><div>
+    <h2><code>certified</code></h2>
+    Only system apps. Access to critical WebAPIs.
+  </div></section>
+  <section class="slide shout"><div>
+    <h2>Permissions?</h2>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Hosted app</h2>
+    <ul>
+      <li><code>alarms</code></li>
+      <li><code>audio-capture</code> (Prompt)</li>
+      <li><code>audio-channel-normal</code></li>
+      <li><code>desktop-notification</code> (Prompt)</li>
+      <li><code>fmradio</code></li>
+      <li><code>geolocation</code> (Prompt)</li>
+      <li><code>push</code></li>
+      <li><code>storage</code></li>
+    </ul>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Privileged app</h2>
+    <ul>
+      <li><code>audio-channel-alarm</code></li>
+      <li><code>browser</code></li>
+      <li><code>contacts</code> (Prompt)</li>
+      <li><code>device-storage:music|pictures|sdcard|videos</code> (Prompt)</li>
+      <li><code>keyboard</code></li>
+      <li><code>mobilenetwork</code></li>
+      <li><code>systemXHR</code></li>
+      <li><code>tcp-socket</code></li>
+    </ul>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Certified app</h2>
+    <ul>
+      <li><code>backgroundservice</code></li>
+      <li><code>bluetooth</code></li>
+      <li><code>camera</code></li>
+      <li><code>permissions</code></li>
+      <li><code>power</code></li>
+      <li><code>settings</code></li>
+      <li><code>sms</code></li>
+      <li><code>telephony</code></li>
+    </ul>
+  </div></section>
+  <section class="slide shout shout--light"><div>
+    <h2>Permissions are not guaranteed</h2>
+  </div></section>
 	<section class="slide shout" id="SeeMore"><div>
 		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower/">See more on GitHub</a></h2>
 		<style>
